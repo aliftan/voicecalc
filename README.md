@@ -19,4 +19,4 @@ Hurray! speak operation and get calcutor without pressing equal button.
 + [FancyButtons](https://github.com/medyo/Fancybuttons)
 
 ### Project Maintainers
-This project is founded and actively maintained by [Alif Tan](https://www.linkedin.com/in/alif-tan-825515117/).
+This project is actively maintained by [Alif Tan](https://www.linkedin.com/in/alif-tan-825515117/).
