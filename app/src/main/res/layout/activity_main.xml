@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:minHeight="0dp"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.aliftan.voicecalc.MainActivity">
+
+    <TextView
+        android:id="@+id/txtScreen"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorScreen"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLength="16"
+        android:padding="0dp"
+        android:hint="Result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInput"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFF"
+        android:gravity="left|center_vertical"
+        android:maxLength="16"
+        android:hint="Input"
+        android:padding="12dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#42485A"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:background="@color/colorButton"
+        android:text="C"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInput"
+        fancy:fb_defaultColor="@color/colorAccent"
+        fancy:fb_iconPosition="bottom"
+        fancy:fb_iconResource="@drawable/ic_keyboard_voice_white_36dp"
+        fancy:fb_radius="8dp"
+        fancy:fb_text="Speak Here" />
+
+</android.support.constraint.ConstraintLayout>
